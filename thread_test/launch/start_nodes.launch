@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <node name="threadchecker" pkg="thread_test" type="ros_spin" respawn="true" output="screen" />
+    <node name="async_threadchecker" pkg="thread_test" type="ros_async_spin" respawn="true" output="screen"/>
+    <node name="python_threadchecker" pkg="thread_test" type="spin.py" respawn="true" output="screen"/>
+</launch>
